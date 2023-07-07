@@ -1,4 +1,4 @@
-import { Box, Grid, Button, IconButton } from "@mui/material";
+import { Box, Grid, Button, IconButton, Badge, Typography } from "@mui/material";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
@@ -10,25 +10,26 @@ const Navigation = () => {
   return (
     <Box sx={{ flexGrow: 1, boxShadow: 1 }}>
       <Grid
-        height={{ sm: 114, xs: 68 }}
-        pl={{ xs: 0, md: 6 }}
-        pr={{ xs: 3, md: 6 }}
+        pl={{ xs: 0, sm: 6 }}
+        pr={3}
         container
         display={"flex"}
         alignItems={"center"}
-        spacing={2}
+        spacing={1}
       >
-        <Grid item xs={1}>
+        <Grid item xs={2} sm={1}>
           <IconButton size="large">
             <MenuOutlinedIcon fontSize="large" color="primary" />
           </IconButton>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={2} sm={3}>
           <Button
+          key={'Pharmacy'}
             sx={{ textTransform: "none" }}
             startIcon={<LocationOnOutlinedIcon />}
           >
-            Pharmacies
+            <Typography fontSize={'inherit'} display={{xs:'none', sm:'initial'}}>
+            Pharmacies</Typography>
           </Button>
         </Grid>
         <Grid item xs={2}>
@@ -36,13 +37,16 @@ const Navigation = () => {
             sx={{ textTransform: "none" }}
             startIcon={<NotificationsActiveOutlinedIcon fontSize="large" />}
           >
-            Notifications
+            <Typography fontSize={'inherit'} display={{xs:'none', sm:'initial'}}>
+            Notifications</Typography>
           </Button>
         </Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={1}>
           <IconButton>
+            <Badge badgeContent={3} color="primary">
             <ShoppingCartOutlinedIcon fontSize="medium" color="primary" />
+            </Badge>
           </IconButton>
         </Grid>
         <Grid item xs={1}>

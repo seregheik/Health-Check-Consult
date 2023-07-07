@@ -6,7 +6,7 @@ const Top = () => {
         <Box sx={{ flexGrow: 1 }}>
             <Grid height={{ sm: 114, xs: 68 }} container spacing={2}>
                 <Grid
-                    height={{ sm: 114, xs: 68 }}
+                    // height={{ sm: 114, xs: 68 }}
                     display={"flex"}
                     justifyContent={"flex-start"}
                     item
