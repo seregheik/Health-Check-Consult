@@ -1,4 +1,11 @@
-import { Box, Grid, Button, IconButton, Badge, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Button,
+  IconButton,
+  Badge,
+  Typography,
+} from "@mui/material";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
@@ -24,12 +31,16 @@ const Navigation = () => {
         </Grid>
         <Grid item xs={2} sm={3}>
           <Button
-          key={'Pharmacy'}
+            key={"Pharmacy"}
             sx={{ textTransform: "none" }}
             startIcon={<LocationOnOutlinedIcon />}
           >
-            <Typography fontSize={'inherit'} display={{xs:'none', sm:'initial'}}>
-            Pharmacies</Typography>
+            <Typography
+              fontSize={"inherit"}
+              display={{ xs: "none", sm: "initial" }}
+            >
+              Pharmacies
+            </Typography>
           </Button>
         </Grid>
         <Grid item xs={2}>
@@ -37,15 +48,19 @@ const Navigation = () => {
             sx={{ textTransform: "none" }}
             startIcon={<NotificationsActiveOutlinedIcon fontSize="large" />}
           >
-            <Typography fontSize={'inherit'} display={{xs:'none', sm:'initial'}}>
-            Notifications</Typography>
+            <Typography
+              fontSize={"inherit"}
+              display={{ xs: "none", sm: "initial" }}
+            >
+              Notifications
+            </Typography>
           </Button>
         </Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={1}>
           <IconButton>
             <Badge badgeContent={3} color="primary">
-            <ShoppingCartOutlinedIcon fontSize="medium" color="primary" />
+              <ShoppingCartOutlinedIcon fontSize="medium" color="primary" />
             </Badge>
           </IconButton>
         </Grid>
