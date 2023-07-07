@@ -1,6 +1,7 @@
 import './App.css'
 import Top from './components/Header/Top'
 import Navigation from './components/Header/Navigation'
+import Body from './components/HomePage/Body'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <Top/>
     <Navigation/>
+    <Body/>
     </>
   )
 }
