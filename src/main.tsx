@@ -15,6 +15,16 @@ const theme = createTheme({
       main: '#11cb5f',
     },
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      realsmall:360,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 });
 
 
