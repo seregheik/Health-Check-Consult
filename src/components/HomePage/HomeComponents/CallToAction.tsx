@@ -15,14 +15,24 @@ const CallToAction = () => {
         textAlign={"center"}
         m={"0 auto"}
       >
-        <Grid item xs={4}>
+        <Grid item display={{xs:'none', realsmall:'initial'}} xs={4}>
           <Button
             sx={{ textTransform: "none", height: 80 }}
             fullWidth={true}
             startIcon={<MedicationOutlinedIcon fontSize="large" />}
           >
+            <Typography fontFamily={"Nunito, sans-serif"} fontSize={{xs:11, sm:14}}>
+            Refill Your Prescriptions
+            </Typography>
+          </Button>
+        </Grid>
+        <Grid display={{realsmall:'none'}} item xs={4}>
+          <Button
+            sx={{ textTransform: "none", height: 80 }}
+            fullWidth={true}
+          >
             <Typography fontFamily={"Nunito, sans-serif"} fontSize={{xs:11}}>
-              Refill your Prescriptions
+            Refi Your Prescriptions
             </Typography>
           </Button>
         </Grid>
