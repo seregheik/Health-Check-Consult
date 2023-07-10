@@ -3,7 +3,7 @@ import adimage from "../../../assets/AdSection/unsplash_D44p6Ubx-9E.svg";
 
 const AdSection = () => {
   return (
-    <Box pt={10}>
+    <Box pt={0}>
       <Grid
         container
         direction={{ xs: "column-reverse", md: "row" }}
@@ -23,7 +23,7 @@ const AdSection = () => {
             justifyContent={"center"}
             p={8}
             alignContent={"center"}
-            height={{ xs: 130, md: 250 }}
+            height={{ xs: 130, md: 200 }}
             fontFamily={"Roboto"}
           >
             <Typography
