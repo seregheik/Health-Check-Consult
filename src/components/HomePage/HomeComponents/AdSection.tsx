@@ -1,34 +1,52 @@
-import { Grid, Box, CardContent, Typography, Card, CardMedia } from "@mui/material";
-import adimage from '../../../assets/AdSection/unsplash_D44p6Ubx-9E.svg'
+import { Grid, Paper, Box, Typography } from "@mui/material";
+import adimage from "../../../assets/AdSection/unsplash_D44p6Ubx-9E.svg";
 
 const AdSection = () => {
   return (
-    <Grid>
-      <Grid>
-        <Card sx={{ display: "flex" }}>
-          <Box>
-            <CardContent>
-              <Typography component="div" variant="h5">
-                Live From Space
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                color="text.secondary"
-                component="div"
-              >
-                Mac Miller
-              </Typography>
-            </CardContent>
+    <Box pt={10}>
+      <Grid
+        container
+        direction={{ xs: "column-reverse", md: "row" }}
+        sx={{
+          backgroundImage: `url(${adimage})`,
+          color: "#fff",
+          mb: 4,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        <Grid item sx={{ backgroundColor: "#00000080" }} xs={4}>
+          <Box
+            display={"flex"}
+            flexWrap={"wrap"}
+            justifyContent={"center"}
+            p={8}
+            alignContent={"center"}
+            height={{ xs: 130, md: 250 }}
+            fontFamily={"Roboto"}
+          >
+            <Typography
+              fontSize={{ xs: 30, sm: 25 }}
+              textAlign={"center"}
+              fontWeight={600}
+            >
+              Perfect Clear
+            </Typography>
+            <Typography
+              fontSize={{ xs: 14, sm: 13, md: 16 }}
+              fontWeight={300}
+              textAlign={"center"}
+              margin={1}
+            >
+              Fight Acne, with our ground breaking serum approved by
+              dermatologist
+            </Typography>
           </Box>
-          <CardMedia
-          sx={{maxWidth:600}}
-            component="img"
-            image={adimage}
-            alt="Live from space album cover"
-          />
-        </Card>
+        </Grid>
+        <Grid item xs={8}></Grid>
       </Grid>
-    </Grid>
+    </Box>
   );
 };
 
