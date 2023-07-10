@@ -3,7 +3,8 @@ import adimage from "../../../assets/AdSection/unsplash_D44p6Ubx-9E.svg";
 
 const AdSection = () => {
   return (
-    <Box pt={0}>
+    <Box 
+    pt={0}>
       <Grid
         container
         direction={{ xs: "column-reverse", md: "row" }}
@@ -16,7 +17,7 @@ const AdSection = () => {
           backgroundPosition: "center",
         }}
       >
-        <Grid item sx={{ backgroundColor: "#00000080" }} xs={4}>
+        <Grid item sx={{ backgroundColor: "#00000080" }}  xs={4}>
           <Box
             display={"flex"}
             flexWrap={"wrap"}
