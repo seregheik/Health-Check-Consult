@@ -23,7 +23,7 @@ const CallToActionOffice = () => {
             <Typography
               mt={{ xs: 2, lg: "2vw" }}
               mb={10}
-              fontSize={{ xs: 20, md: 20, xl: 20 }}
+              fontSize={{ xs: 17, md: 20, xl: 20 }}
               color={"primary.grey2"}
               fontWeight={300}
             >
