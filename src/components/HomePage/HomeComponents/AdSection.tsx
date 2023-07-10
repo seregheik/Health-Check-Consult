@@ -1,4 +1,4 @@
-import { Grid, Paper, Box, Typography } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 import adimage from "../../../assets/AdSection/unsplash_D44p6Ubx-9E.svg";
 
 const AdSection = () => {
