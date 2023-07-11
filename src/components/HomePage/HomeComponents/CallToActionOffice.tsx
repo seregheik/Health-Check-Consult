@@ -1,17 +1,21 @@
 import { Grid, Paper, Typography, Button, Box } from "@mui/material";
 import homeoroffice from "../../../assets/Cta/athomeorattheoffice.jpg";
 
+const imgstyle ={
+  borderRadius: '6px'
+}
+
 const CallToActionOffice = () => {
   return (
     <Paper>
-      <Grid container>
+      <Grid pt={1} pl={1} pr={1} container>
         <Grid item xs={12} md={6}>
           <Box>
-            <img src={homeoroffice} width={"100%"} alt="" />
+            <img style={imgstyle} src={homeoroffice} width={"100%"} alt="" />
           </Box>
         </Grid>
-        <Grid display={"flex"} item xs={12} md={6}>
-          <Box display={"grid"} sx={{ padding: 3 }}>
+        <Grid display={"flex"}   item xs={12} md={6}>
+          <Box display={"grid"}  sx={{ padding: 3, }}>
             <Typography
               color={"primary.black2"}
               fontFamily={"Nunito, sans-seriff"}

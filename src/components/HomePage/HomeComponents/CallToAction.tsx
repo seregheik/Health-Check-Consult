@@ -4,11 +4,17 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 import AccessibilityNewOutlinedIcon from "@mui/icons-material/AccessibilityNewOutlined";
 
 const CallToAction = () => {
+
+const shadowpurple = {
+  boxShadow: "rgb(186 104 200 / 14%) -1px 9px 20px 19px"
+}
+
   return (
     <Box mt={16} pl={5} pr={5}>
       <Grid
+       style={shadowpurple}
         container
-        boxShadow={2}
+        boxShadow={10}
         maxWidth={950}
         // minHeight={80}
         alignItems={"center"}

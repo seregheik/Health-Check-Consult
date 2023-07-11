@@ -2,6 +2,7 @@ import Hero from "./HomeComponents/Hero";
 import CallToAction from "./HomeComponents/CallToAction";
 import AdSection from "./HomeComponents/AdSection";
 import CallToActionOffice from "./HomeComponents/CallToActionOffice";
+import OurServices from "./HomeComponents/OurServices";
 import { Grid, Box } from "@mui/material";
 
 const Body = () => {
@@ -9,7 +10,7 @@ const Body = () => {
     <>
       <Hero></Hero>
       <CallToAction></CallToAction>
-      <Box m={"0 auto"} maxWidth={1300}>
+      <Box m={"0 auto"} maxWidth={1500}>
         <Grid
           pt={{ xs: 10, md: 25 }}
           pr={1}
@@ -27,6 +28,7 @@ const Body = () => {
           <Grid item xs={12}> <CallToActionOffice/></Grid>
         </Grid>
       </Box>
+      <OurServices></OurServices>
      
     </>
   );
