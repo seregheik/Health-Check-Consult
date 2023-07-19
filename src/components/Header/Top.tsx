@@ -33,7 +33,7 @@ const Top = () => {
                         justifyContent={"center"}
                         p={{ xs: 1, md: 3 }}
                     >
-                        <Button sx={{ textTransform: "none" }} variant="contained">
+                        <Button size='small' sx={{ textTransform: "none" }} variant="contained">
                             Get Started
                         </Button>
                     </Stack>

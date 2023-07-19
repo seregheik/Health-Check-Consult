@@ -4,6 +4,7 @@ import AdSection from "./HomeComponents/AdSection";
 import CallToActionOffice from "./HomeComponents/CallToActionOffice";
 import OurServices from "./HomeComponents/OurServices";
 import { Grid, Box } from "@mui/material";
+import HowDoesThisWork from "./HomeComponents/HowDoesThisWork";
 
 const Body = () => {
   return (
@@ -29,7 +30,7 @@ const Body = () => {
         </Grid>
       </Box>
       <OurServices></OurServices>
-     
+     <HowDoesThisWork></HowDoesThisWork>
     </>
   );
 };
