@@ -11,6 +11,7 @@ const OurServices = () => {
 
   return (
     <Box
+    mt={7}
       sx={{
         backgroundImage: `url(${services})`,
         backgroundSize: "cover",
@@ -19,7 +20,7 @@ const OurServices = () => {
       }}
     >
       <Grid
-        sx={{ background: "rgba(39,62,84,0.5)" }}
+        sx={{ background: "#0000009e" }}
         container
         color={"rgba(255, 255, 255, 1)"}
       >
