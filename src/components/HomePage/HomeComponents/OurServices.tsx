@@ -32,6 +32,7 @@ const OurServices = () => {
             pt={3}
             pb={3}
             textAlign={"center"}
+            textTransform={"uppercase"}
           >
             OUR SERVICES
           </Typography>

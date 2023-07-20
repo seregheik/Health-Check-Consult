@@ -5,6 +5,7 @@ import CallToActionOffice from "./HomeComponents/CallToActionOffice";
 import OurServices from "./HomeComponents/OurServices";
 import { Grid, Box } from "@mui/material";
 import HowDoesThisWork from "./HomeComponents/HowDoesThisWork";
+import OurPartners from "./HomeComponents/OurPartners";
 
 const Body = () => {
   return (
@@ -31,6 +32,7 @@ const Body = () => {
       </Box>
       <OurServices></OurServices>
      <HowDoesThisWork></HowDoesThisWork>
+     <OurPartners></OurPartners>
     </>
   );
 };

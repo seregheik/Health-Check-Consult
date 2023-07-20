@@ -17,7 +17,7 @@ const AdSection = () => {
           backgroundPosition: "center",
         }}
       >
-        <Grid item sx={{ backgroundColor: "#00000080" }}  xs={4}>
+        <Grid item sx={{ backgroundColor: "#0000009e" }}  xs={4}>
           <Box
             display={"flex"}
             flexWrap={"wrap"}

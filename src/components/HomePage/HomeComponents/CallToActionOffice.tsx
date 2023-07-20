@@ -9,18 +9,19 @@ const CallToActionOffice = () => {
   return (
     <Paper>
       <Grid pt={1} pl={1} pr={1} container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <Box>
             <img style={imgstyle} src={homeoroffice} width={"100%"} alt="" />
           </Box>
         </Grid>
-        <Grid display={"flex"}   item xs={12} md={6}>
+        <Grid display={"flex"}   item xs={12} md={8}>
           <Box display={"grid"}  sx={{ padding: 3, }}>
             <Typography
               color={"primary.black2"}
               fontFamily={"Nunito, sans-seriff"}
               fontWeight={600}
-              fontSize={{ xs: 30, lg: 50, sm: 34, md: 37 }}
+              textTransform={"uppercase"}
+              fontSize={{ xs: 24, lg: 42, sm: 26, md: 29 }}
             >
               At Home or at the office?
             </Typography>

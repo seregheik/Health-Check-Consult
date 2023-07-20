@@ -4,7 +4,7 @@ import prescsvg from "../../../assets/Cta/prescsvg.svg";
 
 const HowDoesThisWork = () => {
   return (
-    <Grid mt={10} display={"flex"} alignItems={"center"} container>
+    <Grid mt={10} display={"flex"} alignItems={"center"} container sx={{backgroundColor: '#d1d1d1'}}>
       <Grid
         item
         color={"#fff"}
@@ -23,7 +23,13 @@ const HowDoesThisWork = () => {
           container
         >
           <Grid item pb={4} xs={12}>
-            <Typography fontSize={{ xs: 25, sm: 30 }} textAlign={"center"}>
+            <Typography textAlign={"center"} fontFamily={"Nunito, Roboto"}
+          fontWeight={600}
+            fontSize={{ xs: 18, sm: 23 }}
+            pt={3}
+            pb={3}
+            textTransform={"uppercase"}
+            >
               Order with Prescription
             </Typography>
           </Grid>
@@ -55,12 +61,15 @@ const HowDoesThisWork = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid p={{ xs: 4, sm: 6, md: 8, lg: 12, xl: 14 }} item xs={12} md={6}>
+      <Grid p={{ xs: 4, sm: 6, md: 8, lg: 12, xl: 14 }} item xs={12} md={6} color={'primary.grey2'}>
         <Typography
           p={3}
+          fontWeight={600}
+          fontSize={{ xs: 18, sm: 23 }}
+          pt={3}
+          pb={3}
+          textTransform={"uppercase"}
           textAlign={"center"}
-          fontFamily={"Nunito, sans-seriff"}
-          fontSize={{ xs: 30 }}
         >
           How does this work?
         </Typography>
@@ -69,6 +78,7 @@ const HowDoesThisWork = () => {
             pr={2}
             fontFamily={"Nunito, sans-seriff"}
             color={"primary"}
+            fontWeight={700}
           >
             1
           </Typography>
@@ -81,6 +91,7 @@ const HowDoesThisWork = () => {
             pr={2}
             fontFamily={"Nunito, sans-seriff"}
             color={"primary"}
+            fontWeight={700}
           >
             2
           </Typography>
@@ -93,6 +104,7 @@ const HowDoesThisWork = () => {
             fontFamily={"Nunito, sans-seriff"}
             pr={2}
             color={"primary"}
+            fontWeight={700}
           >
             3
           </Typography>
@@ -105,6 +117,7 @@ const HowDoesThisWork = () => {
             pr={2}
             fontFamily={"Nunito, sans-seriff"}
             color={"primary"}
+            fontWeight={700}
           >
             4
           </Typography>
