@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import Top from "./components/Header/Top";
 import Navigation from "./components/Header/Navigation";
 import Body from "./components/HomePage/Body";
+import TopFooter from "./components/Footer/TopFooter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </Box>
       <Box mt={25}>
       <Body /></Box>
+      <TopFooter></TopFooter>
     </>
   );
 }

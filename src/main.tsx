@@ -9,7 +9,8 @@ const theme = createTheme({
     primary: {
       main: '#BA68C8',// @ts-ignore
       black2:'#412841',
-      grey2: '#6C5D6C'
+      grey2: '#6C5D6C',
+      peach: '#EDA6A4'
     },
     secondary: {
       main: '#11cb5f',
